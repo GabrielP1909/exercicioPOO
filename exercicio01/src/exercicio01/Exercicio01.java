@@ -1,20 +1,18 @@
-
 package exercicio01;
+
 public class Exercicio01 {
-    public static void main(String[] args) { 
-        
-       Aluno aluno = new Aluno();
+    public static void main(String[] args) {
 
-        aluno.setIdade(16);
-       System.out.println("Idade: " + aluno.getIdade());
+        Animal a1 = new Cachorro("Rex", 3, 20.5);
+        Animal a2 = new Gato("Mimi", 2, 5.0);
+        Animal a3 = new Vaca("Mimosa", 5, 350.0);
+        Animal a4 = new Cavalo("Pé de Pano", 4, 400.0);
 
-        aluno.setMatricula("62");
-        System.out.println("Matrícula: " + aluno.getMatricula());
+        // Polimorfismo
+        Animal[] animais = {a1, a2, a3, a4};
 
-        aluno.setCurso("Informática");
-        System.out.println("Curso: " + aluno.getCurso());
+        for (Animal animal : animais) {
+            animal.emitirSom();
+        }
     }
 }
-    
-    
-
