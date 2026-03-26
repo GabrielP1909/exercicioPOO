@@ -14,6 +14,7 @@ public class Exercicio01 {
         for (Animal animal : animais) {
             animal.emitirSom();
             
+            
         }
     }
 }
